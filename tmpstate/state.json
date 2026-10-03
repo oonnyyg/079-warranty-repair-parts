@@ -1,0 +1,80 @@
+{
+  "models": {
+    "M1": {
+      "warranty_days": 365,
+      "covered_categories": [
+        "screen",
+        "battery"
+      ]
+    }
+  },
+  "devices": {
+    "D1": {
+      "model": "M1",
+      "purchase_date": "2026-01-01",
+      "warranty_days": 365,
+      "covered_categories": [
+        "screen",
+        "battery"
+      ]
+    }
+  },
+  "parts": {
+    "screen": {
+      "total": 8,
+      "reserved": 0,
+      "consumed": 0
+    }
+  },
+  "tickets": {
+    "T000001": {
+      "id": "T000001",
+      "device": "D1",
+      "category": "screen",
+      "request_date": "2026-06-01",
+      "status": "cancelled",
+      "parts": [
+        {
+          "part": "screen",
+          "quantity": 2
+        }
+      ],
+      "history": [
+        {
+          "status": "pending_approval"
+        },
+        {
+          "status": "approved",
+          "parts": [
+            {
+              "part": "screen",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "status": "cancelled",
+          "parts": [
+            {
+              "part": "screen",
+              "quantity": 2
+            }
+          ]
+        }
+      ]
+    },
+    "T000002": {
+      "id": "T000002",
+      "device": "D1",
+      "category": "screen",
+      "request_date": "2026-06-01",
+      "status": "pending_approval",
+      "history": [
+        {
+          "status": "pending_approval"
+        }
+      ]
+    }
+  },
+  "next_id": 3
+}

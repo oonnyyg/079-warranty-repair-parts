@@ -1,0 +1,6 @@
+{"op":"register_model","model":"M1","warranty_days":365,"covered_categories":["screen"]}
+{"op":"register_device","device":"D1","model":"M1","date":"2026-01-01"}
+{"op":"stock_part","part":"screen","quantity":3}
+{"op":"request_repair","device":"D1","category":"screen","date":"2026-06-01"}
+{"op":"approve","ticket":"T000001","parts":[{"part":"screen","quantity":3}]}
+{"op":"cancel","ticket":"T000001"}
